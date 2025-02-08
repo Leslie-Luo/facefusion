@@ -12,7 +12,7 @@ jobs:
                     - {
                           display-name: "deploy (cpu)",
                           docker-file: "Dockerfile",
-                          image-slug: "facefusion/facefusion:${{ github.ref_name }}-cpu",
+                          image-slug: "ghcr.io/${{ github.repository_owner }}/facefusion:${{ github.ref_name }}-cpu",
                       }
         steps:
             - name: Login
